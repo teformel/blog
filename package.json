@@ -5,8 +5,9 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "deploy": "bun run build && wrangler deploy",
+    "server": "hexo server",
+    "preview": "bun run build && wrangler dev"
   },
   "hexo": {
     "version": "8.1.2"
@@ -26,5 +27,8 @@
     "hexo-theme-butterfly": "^5.5.5",
     "hexo-theme-fluid": "^1.9.9",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.105.0"
   }
 }
