@@ -1,0 +1,12 @@
+# Butterfly Theme Custom Override Configuration
+# https://butterfly.js.org/
+
+# Social media links
+social:
+  fab fa-github: https://github.com/teformel || Github || '#24292e'
+  fas fa-envelope: mailto:maorila@qq.com || Email || '#4a7dbe'
+
+# Site avatar settings
+avatar:
+  img: https://github.com/teformel.png
+  effect: true
